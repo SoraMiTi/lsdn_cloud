@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="txmanager" />
+        <module name="test-model" />
+        <module name="registry" />
+        <module name="lsdn-screen-select" />
+        <module name="lsdn_screen" />
+        <module name="lsdn-screen-model" />
+        <module name="gateway" />
+        <module name="utils" />
+        <module name="lsdn-screen-common" />
+        <module name="lsdn-screen-logic" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud" target="1.8" />
+      <module name="code" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="commons" target="1.8" />
+      <module name="dbservice" target="1.8" />
+      <module name="dbservice-parent" target="1.8" />
+      <module name="dmdb" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="idev-parent" target="1.8" />
+      <module name="insertdb" target="1.8" />
+      <module name="logicservice" target="1.8" />
+      <module name="lsdn" target="1.8" />
+      <module name="lsdn-screen-common" target="1.8" />
+      <module name="lsdn-screen-logic" target="1.8" />
+      <module name="lsdn-screen-model" target="1.8" />
+      <module name="lsdn-screen-select" target="1.8" />
+      <module name="model" target="1.8" />
+      <module name="model-parent" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="registry" target="1.8" />
+      <module name="selectdb" target="1.8" />
+      <module name="spring-boot-parent" target="1.8" />
+      <module name="test" target="1.8" />
+      <module name="test-model" target="1.8" />
+      <module name="txmanager" target="1.8" />
+      <module name="util" target="1.8" />
+      <module name="utils" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud" options="-parameters" />
+      <module name="code" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="commons" options="-parameters" />
+      <module name="dbservice" options="-parameters" />
+      <module name="dbservice-parent" options="-parameters" />
+      <module name="dmdb" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="idev-parent" options="-parameters" />
+      <module name="insertdb" options="-parameters" />
+      <module name="logicservice" options="-parameters" />
+      <module name="lsdn" options="-parameters" />
+      <module name="lsdn-screen-common" options="-parameters" />
+      <module name="lsdn-screen-logic" options="-parameters" />
+      <module name="lsdn-screen-model" options="-parameters" />
+      <module name="lsdn-screen-select" options="-parameters" />
+      <module name="model" options="-parameters" />
+      <module name="model-parent" options="-parameters" />
+      <module name="parent" options="-parameters" />
+      <module name="registry" options="-parameters" />
+      <module name="selectdb" options="-parameters" />
+      <module name="spring-boot-parent" options="-parameters" />
+      <module name="test" options="-parameters" />
+      <module name="test-model" options="-parameters" />
+      <module name="txmanager" options="-parameters" />
+      <module name="util" options="-parameters" />
+      <module name="utils" options="-parameters" />
+    </option>
+  </component>
+</project>

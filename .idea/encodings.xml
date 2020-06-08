@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cloud/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud/registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud/txmanager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code/dbservice/selectdb/lsdn-screen-select/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code/logicservice/lsdn-screen-logic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code/model/lsdn-screen-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code/utils/src/main/java" charset="UTF-8" />
+  </component>
+</project>

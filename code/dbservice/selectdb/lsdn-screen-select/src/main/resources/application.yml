@@ -1,0 +1,54 @@
+#启动端口
+server:
+    port: 25001
+#eureka注册
+eureka:
+    instance:
+        hostname: lsdn-screen-select
+    client:
+        serviceUrl:
+            defaultZone: http://lsdn-registry:24001/eureka/
+#spring配置
+spring:
+    application:
+        name: lsdn-screen-select
+    #jpa sql展示
+    jpa:
+        show-sql: true
+        #数据库方言
+        database-platform: org.hibernate.dialect.Oracle10gDialect
+    #数据源
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@172.16.51.74:1521:orcl
+        username: lsdn
+        password: lsdn123
+        sql-script-encoding: utf-8
+        continue-on-error: false
+        #链接池
+        hikari:
+            minimum-idle: 5
+            idle-timeout: 30002
+            maximum-pool-size: 15
+            auto-commit: true
+            pool-name: LsdnHikariCP
+            max-lifetime: 500000
+            connection-timeout: 30001
+            connection-test-query: SELECT 1 FROM DUAL
+            validation-timeout: 5000
+    cloud:
+        refresh:
+            refreshable: none
+#log日志
+logging:
+    level:
+        cn.com.liandisys.lsdn.code.dbservice.selectdb.lsdn_screen.dao: debug
+#actuator检测
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+        shutdown:
+            enabled: true

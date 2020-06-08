@@ -1,0 +1,51 @@
+server:
+  port: 7970
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://lsdn-registry:24001/eureka/'
+  instance:
+    hostname: tx-manager
+    prefer-ip-address: true
+spring:
+  application:
+    name: tx-manager
+    #mysql
+  datasource:
+    password: root
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.50.141:3306/tx-manager?characterEncoding=utf8&useSSL=false
+  #redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+tx-lcn:
+  logger:
+    driver-class-name: ${spring.datasource.driver-class-name}
+    jdbc-url: ${spring.datasource.url}
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    enabled: true
+  manager:
+    # TxManager Host Ip
+    host: 127.0.0.1
+    port: 8070
+    admin-key: 1
+    heart-time: 15000
+    dtx-time: 30000
+    concurrent-level: 128
+    ex-url-enabled: true
+    ex-url: /provider/email-to/1205120611@qq.com
+  message:
+    netty:
+      attr-delay-time: 10000
+logging:
+  level:
+    com:
+      codingapi: debug

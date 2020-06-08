@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="lsdn_74" uuid="b97061ae-f98a-4e9c-ad54-3c67b267dcf0">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>lsdn用户</remarks>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@172.16.51.74:1521:orcl</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="@localhost" uuid="7826f39b-0334-4ca3-b441-1f09440604df">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="Hongkong" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>

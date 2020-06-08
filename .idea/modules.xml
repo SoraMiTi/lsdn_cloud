@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud/cloud.iml" filepath="$PROJECT_DIR$/cloud/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/code.iml" filepath="$PROJECT_DIR$/code/code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/dbservice/dbservice.iml" filepath="$PROJECT_DIR$/code/dbservice/dbservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/dbservice-parent/dbservice-parent.iml" filepath="$PROJECT_DIR$/parent/dbservice-parent/dbservice-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/dbservice/dmdb/dmdb.iml" filepath="$PROJECT_DIR$/code/dbservice/dmdb/dmdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/gateway/gateway.iml" filepath="$PROJECT_DIR$/cloud/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/idev-parent/idev-parent.iml" filepath="$PROJECT_DIR$/parent/idev-parent/idev-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/dbservice/insertdb/insertdb.iml" filepath="$PROJECT_DIR$/code/dbservice/insertdb/insertdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/logicservice/logicservice.iml" filepath="$PROJECT_DIR$/code/logicservice/logicservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lsdn.iml" filepath="$PROJECT_DIR$/lsdn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/logicservice/lsdn-screen-logic/lsdn-screen-logic.iml" filepath="$PROJECT_DIR$/code/logicservice/lsdn-screen-logic/lsdn-screen-logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/model/lsdn-screen-model/lsdn-screen-model.iml" filepath="$PROJECT_DIR$/code/model/lsdn-screen-model/lsdn-screen-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/dbservice/selectdb/lsdn-screen-select/lsdn-screen-select.iml" filepath="$PROJECT_DIR$/code/dbservice/selectdb/lsdn-screen-select/lsdn-screen-select.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/model/model.iml" filepath="$PROJECT_DIR$/code/model/model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/model-parent/model-parent.iml" filepath="$PROJECT_DIR$/parent/model-parent/model-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/registry/registry.iml" filepath="$PROJECT_DIR$/cloud/registry/registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/dbservice/selectdb/selectdb.iml" filepath="$PROJECT_DIR$/code/dbservice/selectdb/selectdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/spring-boot-parent/spring-boot-parent.iml" filepath="$PROJECT_DIR$/parent/spring-boot-parent/spring-boot-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/txmanager/txmanager.iml" filepath="$PROJECT_DIR$/cloud/txmanager/txmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/utils/utils.iml" filepath="$PROJECT_DIR$/code/utils/utils.iml" />
+    </modules>
+  </component>
+</project>

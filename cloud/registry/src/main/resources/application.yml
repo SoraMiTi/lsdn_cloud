@@ -1,0 +1,24 @@
+server:
+  port: 24001
+eureka:
+  instance:
+    hostname: lsdn-registry
+    prefer-ip-address: true
+    #拉取服务注册信息  15s一次
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 10
+    #访问地址
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#spring:
+#  security:
+#    basic:
+#      enable: false
+#    user:
+#      name: admin
+#      password: 123456

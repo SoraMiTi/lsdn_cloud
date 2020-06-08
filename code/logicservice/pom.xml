@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.com.liandisys.lsdn</groupId>
+        <artifactId>code</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>cn.com.liandisys.lsdn.code</groupId>
+    <artifactId>logicservice</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>logicservice</name>
+    <description>业务处理层</description>
+    <packaging>pom</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>cn.com.liandisys.lsdn.parent</groupId>
+            <artifactId>spring-boot-parent</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <type>pom</type>
+            <exclusions>
+                <exclusion>
+                    <artifactId>hystrix-core</artifactId>
+                    <groupId>com.netflix.hystrix</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+    <modules>
+        <module>lsdn-screen-logic</module>
+    </modules>
+</project>

@@ -1,0 +1,47 @@
+server:
+  port: 24002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://lsdn-registry:24001/eureka/'
+  instance:
+    hostname: lsdn-gateway
+spring:
+  application:
+    name: lsdn-gateway
+  data:
+    rest:
+      defaultMediaType: application/json
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  cloud:
+    refresh:
+      extra-refreshable: none
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: debug
+
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 20000
+#ribbon:
+#  ReadTimeout: 20000
+#  ConnectTimeout: 20000
+#zuul:
+##  ignoredServices: '*'
+#  host:
+#    connect-timeout-millis: 20000
+#    socket-timeout-millis: 20000

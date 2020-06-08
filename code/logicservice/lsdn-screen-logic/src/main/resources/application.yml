@@ -1,0 +1,20 @@
+server:
+  port: 26001
+eureka:
+  instance:
+    hostname: lsdn-screen-logic
+  client:
+    serviceUrl:
+      defaultZone: http://lsdn-registry:24001/eureka/
+spring:
+  application:
+    name: lsdn-screen-logic
+  data:
+    rest:
+      defaultMediaType: application/json
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  cloud:
+    refresh:
+      extra-refreshable: none

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>parent</artifactId>
+        <groupId>cn.com.liandisys.lsdn</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>cn.com.liandisys.lsdn.parent</groupId>
+    <artifactId>idev-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>idev-parent</name>
+    <description>idev引用jar</description>
+    <packaging>pom</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+        <idev.version>3.0-SNAPSHOT</idev.version>
+    </properties>
+    <!-- 设定除中央仓库(repo1.maven.org/maven2/)外的其他仓库,按设定顺序进行查找. -->
+    <repositories>
+        <!-- LDNS Nexus私服 -->
+        <repository>
+            <id>nexus</id>
+            <name>Team Nexus Repository</name>
+            <url>http://172.16.4.110:8081/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <!-- 插件仓库 LDNS Nexus私服 -->
+        <pluginRepository>
+            <id>nexus</id>
+            <name>Team Nexus Repository</name>
+            <url>http://172.16.4.110:8081/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+    <dependencies>
+        <!-- idev -->
+        <dependency>
+            <groupId>cn.com.liandisys</groupId>
+            <artifactId>idev-utils</artifactId>
+            <version>${idev.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jcl-over-slf4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-parent</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-jdk14</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>cn.com.liandisys</groupId>
+            <artifactId>idev-security</artifactId>
+            <version>${idev.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>cn.com.liandisys</groupId>
+            <artifactId>idev-core</artifactId>
+            <version>${idev.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.data</groupId>
+                    <artifactId>spring-data-jpa</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+</project>
