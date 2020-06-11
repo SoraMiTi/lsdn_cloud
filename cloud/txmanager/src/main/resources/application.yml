@@ -15,10 +15,10 @@ spring:
     password: root
     username: root
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.16.50.141:3306/tx-manager?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://172.16.50.141:3306/tx-manager
   #redis
   redis:
-    host: 127.0.0.1
+    host: 172.16.50.141
     port: 6379
     password: root
   jpa:
@@ -34,7 +34,7 @@ tx-lcn:
     enabled: true
   manager:
     # TxManager Host Ip
-    host: 127.0.0.1
+    host: 172.16.50.141
     port: 8070
     admin-key: 1
     heart-time: 15000

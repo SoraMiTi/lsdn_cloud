@@ -52,3 +52,7 @@ management:
                 include: '*'
         shutdown:
             enabled: true
+#lcn
+tx-lcn:
+    client:
+        manager-address: 172.16.50.141:8070
